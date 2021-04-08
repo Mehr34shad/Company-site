@@ -1,0 +1,10 @@
+@mixin transition($type:ease, $time: .3s) {
+    transition: all $type $time;
+}
+
+@mixin flexbox($dir:row, $j_c:center, $a_i:center) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $j_c;
+    align-items: $a_i;
+}

@@ -1,0 +1,29 @@
+.testimonials {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  .team-item {
+    // display: block;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+  .user-image img {
+    border-radius: 100px;
+    float: right;
+  }
+  .team-info {
+    @include transition;
+    h3 {
+      font-size: 18px;
+      color: #1e1e1e;
+    }
+    p {
+      color: $pink;
+      &:hover {
+        margin-right: -10px;
+      }
+    }
+  }
+}

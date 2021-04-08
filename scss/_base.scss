@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Dirooz";
+  src: url("/fonts/dirooz/Dirooz-FD.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/dirooz/Dirooz-FD.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/dirooz/Dirooz-FD.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("/fonts/dirooz/Dirooz-FD.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Byekan";
+  src: url("/fonts/BYekan/BYekan+.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Byekan";
+  src: url("/fonts/BYekan/BYekanBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Samim;
+  src: url("/fonts/samim/Samim-FD.eot");
+  src: url("/fonts/samim/Samim-FD.woff2") format("embedded-opentype"),
+    url("/fonts/samim/Samim-FD.woff") format("woff"),
+    url("/fonts//samim/Samim-FD.ttf") format("truetype");
+  font-weight: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Dirooz", "Byekan";
+}
+
+::selection {
+  background: $pink;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: $pink;
+  color: #fff;
+}
+.active {
+  color: $pink;
+}
+.active-bg {
+  background-color: $pink;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none !important;
+  color: $black-lenght;
+  @include transition($type: ease-in-out, $time: 0.15s);
+  &:hover {
+    color: $pink;
+  }
+}
+.persian-number {
+  font-family: Samim;
+}
+.active {
+  color: $pink;
+}
+.hr {
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  margin-top: 100px;
+  border-bottom: 1px solid #eee;
+}

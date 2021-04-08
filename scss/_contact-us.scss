@@ -1,0 +1,66 @@
+.contact-us {
+  font-family: "Dirooz";
+  background-color: #f2f2fe;
+  padding-bottom: 5rem;
+  &-text {
+    h2 {
+      font-weight: 500;
+      font-size: 28px;
+      color: $dark;
+    }
+  }
+  &-txt {
+    h5 {
+      color: $dark;
+      font-weight: 500;
+      font-size: 18px;
+    }
+    p {
+      color: $blue;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+  .inp-text {
+    direction: rtl;
+    color: gray;
+    font-size: 14px;
+    border: 1px solid #eee;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    padding: 0 20px;
+    border-radius: 25px;
+    &:focus {
+      border: 4px solid skyblue;
+    }
+  }
+  .txt-area {
+    direction: rtl;
+    color: #777;
+    font-size: 14px;
+    border: 1px solid #eee;
+    width: 100%;
+    height: 150px;
+    outline: none;
+    padding: 20px;
+    border-radius: 25px;
+    resize: none;
+    &:focus {
+      border: 4px solid skyblue;
+    }
+  }
+  button {
+    color: #fff;
+    background-color: $purple;
+    padding: 10px 22px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 14px;
+    @include transition;
+    &:hover {
+      background-color: $pink;
+    }
+  }
+}

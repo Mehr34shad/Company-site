@@ -1,0 +1,33 @@
+.blog {
+  font-family: "Dirooz";
+  h2 {
+    color: $dark;
+    font-weight: 500;
+    font-size: 28px;
+  }
+  img {
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    height: 250px;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  p {
+    line-height: 27px;
+  }
+  button {
+    background-color: $purple;
+    padding: 10px 18px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 14px;
+    @include transition;
+    &:hover {
+      background-color: $pink;
+    }
+  }
+}

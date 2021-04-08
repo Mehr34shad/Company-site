@@ -1,0 +1,54 @@
+.welcome-area {
+  height: 100vh;
+  background: url("/img/banner-bg.png") center center/cover no-repeat;
+  position: relative;
+  @include flexbox($j_c: center, $a_i: center);
+  font-family: "Dirooz";
+  .button {
+    margin-top: 5rem !important;
+    color: #fff;
+    background: $pink;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 12px 22px;
+    @include transition($type: ease, $time: 0.3s);
+    &:hover {
+      background-color: $purple;
+    }
+  }
+  .features-small-item {
+    cursor: pointer;
+    display: block;
+    background: #ffffff;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    // transition: all 0.3s ease 0s;
+    @include transition;
+    position: relative;
+    margin-bottom: 30px;
+    color: #000;
+
+    .icon {
+      margin: auto;
+      width: 40%;
+      padding: 15px;
+      border-radius: 50%;
+      background-color: $purple;
+      @include transition;
+      &:hover{
+        background-color: $pink!important;
+      }
+    }
+    h5{
+      padding: 25px 0;
+    }
+    p{
+      color: gray;
+      font-size: 18px;
+    }
+  }
+}

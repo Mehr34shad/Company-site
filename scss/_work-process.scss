@@ -1,0 +1,26 @@
+.work-process {
+  background: url("/img/work-process-bg.png") center center/cover no-repeat;
+  height: 50vh;
+  .mini-box {
+    display: block;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    position: relative;
+    @include transition;
+    text-align: center;
+    a{
+        &:hover{
+            color: #000 !important;
+        }
+    }
+    p{
+        color: gray;
+    }
+    &:hover{
+        margin-top: -10px;
+    }
+  }
+}
